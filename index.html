@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delronh</title>
+<link rel="preconnect" href="https://cdn.jsdelivr.net">
+<link href="https://cdn.jsdelivr.net/npm/fontsource-fira-code@5.0.19/index.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fontsource-rajdhani@5.0.20/index.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fontsource-orbitron@5.0.20/index.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/fontsource-inter@5.0.22/index.css" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<canvas id="bg-canvas"></canvas>
+
+<div class="nav-overlay" id="navOverlay"></div>
+
+<nav id="navbar">
+  <div class="nav-logo">DH</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#hero">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#testimonials">Testimonials</a></li>
+    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero-container">
+    <div class="hero-text">
+      <p class="hero-greeting"><span class="line"></span> Hello, I'm</p>
+      <h1 class="hero-name">
+        <span class="first">Delron</span><br>
+        <span class="last">Hwingwiri</span>
+      </h1>
+      <p class="hero-title"><span id="typed-text"></span><span class="cursor">|</span></p>
+      <p class="hero-desc">A passionate engineering student and freelance developer specializing in building exceptional web experiences, secure networks, and innovative digital solutions.</p>
+      <div class="hero-buttons">
+        <a href="#contact" class="btn-primary">
+          Let's Work Together
+        </a>
+        <a href="#projects" class="btn-secondary">
+          View My Work
+        </a>
+      </div>
+      <div class="hero-socials">
+        <a href="https://github.com/Delron01" class="social-link" title="GitHub" target="_blank">𑄝</a>
+        <a href="https://linkedin.com/in/delronh" class="social-link" title="LinkedIn" target="_blank">in</a>
+        <a href="https://www.upwork.com/freelancers/~011075f12791c44a3d?mp_source=share" class="social-link" title="Upwork" target="_blank">up</a>
+        <a href="https://youtube.com/@Delron-h" class="social-link" title="youtube" target="_blank">▶</a>
+      </div>
+    </div>
+    <div class="hero-image">
+      <div class="hero-img-wrapper">
+        <img src="image.jpg" alt="Delron Hwingwiri">
+        <div class="floating-badge badge-1">
+          <div class="badge-icon">🛠️</div>
+          <span>Electrical Engineer</span>
+        </div>
+        <div class="floating-badge badge-2">
+          <div class="badge-icon">🛡️</div>
+          <span>Cybersecurity</span>
+        </div>
+        <div class="floating-badge badge-3">
+          <div class="badge-icon">🌐</div>
+          <span>Web Developer</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-header reveal">
+    <span class="section-tag">// Who I Am</span>
+    <h2 class="section-title">About <span class="highlight">Me</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-stats reveal">
+      <div style="grid-column: span 3;">
+        <div class="about-text">
+          <p>
+            I'm Delron Hwingwiri, a third year <em><b>Electrical and Electronics Engineering</b></em> student with a deep interest in the dynamic world of cybersecurity and networking. I'm also a freelance technologist specializing in web development and design. I combine technical expertise with creative problem-solving to deliver solutions that are both functional and visually compelling. Whether it's building responsive websites, designing intuitive interfaces, or securing networks against threats, I bring dedication and precision to every project. My goal is to leverage technology to make a meaningful impact.
+        </p>
+        </div>
+      </div>
+      <div class="about-stats" style="margin-top: 2rem;">
+        <div class="stat-card">
+          <div class="stat-number" data-target="10">0</div>
+          <div class="stat-label">Projects</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Clients</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" data-target="2">0</div>
+          <div class="stat-label">Years Exp</div>
+        </div>
+      </div>
+    </div>
+    <div class="reveal">
+      <h3 style="font-family: var(--font-heading); font-size: 1.4rem; margin-bottom: 1.5rem;">Core <span style="color: var(--accent);">Skills</span></h3>
+      <div class="skills-grid">
+        <div class="skill-item">
+          <div class="skill-icon web">🌐</div>
+          <div class="skill-info">
+            <h4>Web Development</h4>
+            <p>HTML, CSS, JS, React</p>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon design">🎨</div>
+          <div class="skill-info">
+            <h4>Web Design</h4>
+            <p>Figma, Framer, Responsive</p>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon security">🛡️</div>
+          <div class="skill-info">
+            <h4>Cybersecurity</h4>
+            <p>Nmap, Wireshark, Metasploit</p>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon network">&#x1F5A7;</div>
+          <div class="skill-info">
+            <h4>Networking</h4>
+            <p>TCP/IP, Firewalls, Routing</p>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon web">&#60;/&#62;</div>
+          <div class="skill-info">
+            <h4>Programming/Scripting</h4>
+            <p>Python, C, MatLab, Bash, Git</p>
+          </div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-icon security">🛠️</div>
+          <div class="skill-info">
+            <h4>Core Engineering</h4>
+            <p>Circuit analysis, Digital electronics, Signal theory</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="section-header reveal">
+    <span class="section-tag">// What I Do</span>
+    <h2 class="section-title">My <span class="highlight">Services</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="services-grid">
+    <div class="service-card reveal">
+      <div class="service-icon dev">💻</div>
+      <h3>Web Development</h3>
+      <p>Building modern, responsive, and performant websites and web applications using cutting-edge technologies and best practices.</p>
+      <div class="service-tags">
+        <span class="service-tag">HTML/CSS</span>
+        <span class="service-tag">JavaScript</span>
+        <span class="service-tag">React</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon design">🎨</div>
+      <h3>Web Design</h3>
+      <p>Creating visually stunning and user-centered designs that enhance user experience and drive engagement across all devices.</p>
+      <div class="service-tags">
+        <span class="service-tag">Figma</span>
+        <span class="service-tag">Framer</span>
+        <span class="service-tag">Responsive</span>
+      </div>
+    </div>
+    <div class="service-card reveal">
+      <div class="service-icon cyber">🔐</div>
+      <h3>Cybersecurity & Networking</h3>
+      <p>Securing digital assets and infrastructure through vulnerability assessments, penetration testing, and robust network configurations.</p>
+      <div class="service-tags">
+        <span class="service-tag">Pen Testing</span>
+        <span class="service-tag">Firewalls</span>
+        <span class="service-tag">Network Sec</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="section-header reveal">
+    <span class="section-tag">// My Work</span>
+    <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p1">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <rect x="10" y="10" width="60" height="45" rx="4" stroke="#00d4ff" stroke-width="2"/>
+            <line x1="10" y1="22" x2="70" y2="22" stroke="#00d4ff" stroke-width="1.5" opacity="0.5"/>
+            <circle cx="18" cy="16" r="2" fill="#ef4444"/>
+            <circle cx="26" cy="16" r="2" fill="#f59e0b"/>
+            <circle cx="34" cy="16" r="2" fill="#10b981"/>
+            <rect x="18" y="30" width="30" height="3" rx="1.5" fill="#00d4ff" opacity="0.6"/>
+            <rect x="18" y="38" width="44" height="2" rx="1" fill="#94a3b8" opacity="0.4"/>
+            <rect x="18" y="44" width="38" height="2" rx="1" fill="#94a3b8" opacity="0.4"/>
+            <rect x="30" y="60" width="20" height="4" rx="2" fill="#7b2ff7" opacity="0.7"/>
+            <line x1="40" y1="55" x2="40" y2="60" stroke="#7b2ff7" stroke-width="1.5" opacity="0.7"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Web Development</span>
+        <h3>E-Commerce Platform</h3>
+        <p>A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+          <span>Stripe</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p2">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <rect x="15" y="8" width="50" height="64" rx="4" stroke="#7b2ff7" stroke-width="2"/>
+            <rect x="22" y="14" width="36" height="42" rx="2" fill="#161b22"/>
+            <rect x="22" y="14" width="36" height="6" rx="2" fill="#7b2ff7" opacity="0.3"/>
+            <circle cx="40" cy="66" r="3" stroke="#7b2ff7" stroke-width="1.5"/>
+            <rect x="30" y="24" width="20" height="2" rx="1" fill="#94a3b8" opacity="0.5"/>
+            <rect x="30" y="30" width="15" height="2" rx="1" fill="#94a3b8" opacity="0.3"/>
+            <rect x="26" y="40" width="28" height="12" rx="2" fill="#7b2ff7" opacity="0.15" stroke="#7b2ff7" stroke-width="1"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Web Design</span>
+        <h3>Portfolio Dashboard</h3>
+        <p>An interactive portfolio management dashboard with real-time analytics and data visualization components.</p>
+        <div class="project-tech">
+          <span>Figma</span>
+          <span>React</span>
+          <span>Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p3">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <path d="M40 12 L60 24 L60 50 L40 68 L20 50 L20 24 Z" stroke="#10b981" stroke-width="2" fill="none"/>
+            <path d="M40 20 L52 28 L52 46 L40 58 L28 46 L28 28 Z" stroke="#10b981" stroke-width="1" fill="#10b981" opacity="0.1"/>
+            <circle cx="40" cy="38" r="8" stroke="#10b981" stroke-width="1.5"/>
+            <path d="M37 38 L39 40 L43 35" stroke="#10b981" stroke-width="2" fill="none"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Cybersecurity</span>
+        <h3>Network Vulnerability Scanner</h3>
+        <p>An automated tool for scanning network vulnerabilities with detailed reporting and remediation suggestions.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>Nmap</span>
+          <span>Flask</span>
+          <span>Docker</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p4">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <circle cx="40" cy="40" r="28" stroke="#10b981" stroke-width="2" fill="none"/>
+            <circle cx="40" cy="40" r="20" stroke="#10b981" stroke-width="1" opacity="0.5"/>
+            <path d="M25 40 Q32 25 40 35 Q48 25 55 40 Q48 55 40 45 Q32 55 25 40Z" fill="#10b981" opacity="0.2" stroke="#10b981" stroke-width="1.5"/>
+            <circle cx="40" cy="40" r="4" fill="#10b981"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Networking</span>
+        <h3>Network Monitoring System</h3>
+        <p>Real-time network monitoring tool with traffic analysis, alerting, and comprehensive reporting features.</p>
+        <div class="project-tech">
+          <span>Python</span>
+          <span>SNMP</span>
+          <span>Grafana</span>
+          <span>Linux</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p5">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <rect x="12" y="20" width="56" height="36" rx="4" stroke="#f59e0b" stroke-width="2"/>
+            <rect x="18" y="26" width="20" height="12" rx="2" fill="#f59e0b" opacity="0.2"/>
+            <rect x="18" y="42" width="44" height="2" rx="1" fill="#94a3b8" opacity="0.4"/>
+            <rect x="18" y="48" width="30" height="2" rx="1" fill="#94a3b8" opacity="0.3"/>
+            <rect x="30" y="60" width="20" height="4" rx="2" fill="#f59e0b" opacity="0.6"/>
+            <circle cx="40" cy="32" r="4" fill="#f59e0b" opacity="0.4"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Web Development</span>
+        <h3>Task Management App</h3>
+        <p>A collaborative task management application with real-time updates, team features, and productivity tracking.</p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>PostgreSQL</span>
+          <span>Socket.io</span>
+          <span>Tailwind</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card reveal">
+      <div class="project-preview">
+        <div class="project-preview-bg p6">
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <path d="M20 60 L20 30 L30 20 L40 30 L40 50 L50 40 L60 50 L60 60 Z" stroke="#00d4ff" stroke-width="2" fill="#00d4ff" opacity="0.1"/>
+            <path d="M30 60 L30 40 L40 30 L40 50 L50 40 L50 60" stroke="#7b2ff7" stroke-width="2" fill="#7b2ff7" opacity="0.1"/>
+            <circle cx="30" cy="60" r="3" fill="#00d4ff"/>
+            <circle cx="60" cy="60" r="3" fill="#00d4ff"/>
+          </svg>
+        </div>
+        <div class="project-overlay">
+          <a href="#" title="Live Demo">🔗</a>
+          <a href="#" title="Source Code">📂</a>
+        </div>
+      </div>
+      <div class="project-info">
+        <span class="project-category">Web Design</span>
+        <h3>Student Portal Redesign</h3>
+        <p>Complete redesign of a university student portal focusing on accessibility, usability, and modern aesthetics.</p>
+        <div class="project-tech">
+          <span>Figma</span>
+          <span>HTML/CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials">
+  <div class="section-header reveal">
+    <span class="section-tag">// What People Say</span>
+    <h2 class="section-title">Client <span class="highlight">Testimonials</span></h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="testimonials-container reveal">
+    <div class="testimonials-track" id="testimonialsTrack">
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Delron delivered an exceptional website for our business. His attention to detail, responsiveness, and technical expertise exceeded our expectations. Highly recommended!</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: rgba(0, 212, 255, 0.15); color: var(--accent);">TM</div>
+            <div class="testimonial-author-info">
+              <h4>Tendai Moyo</h4>
+              <p>Business Owner, TechStart</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Working with Delron on our network security audit was a game-changer. He identified critical vulnerabilities and provided clear, actionable solutions. True professional.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: rgba(123, 47, 247, 0.15); color: var(--accent-secondary);">CN</div>
+            <div class="testimonial-author-info">
+              <h4>Chiedza Ndlovu</h4>
+              <p>IT Manager, SecureNet Corp</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Delron redesigned our entire web presence with a stunning UI/UX. The new design increased our user engagement by 40%. He truly understands modern design principles.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: rgba(16, 185, 129, 0.15); color: #10b981;">RK</div>
+            <div class="testimonial-author-info">
+              <h4>Rumbidzai Kufa</h4>
+              <p>Marketing Director, Digital Wave</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card">
+        <div class="testimonial-content">
+          <div class="testimonial-quote">"</div>
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">Delron built a custom web application for our organization that streamlined our operations. His problem-solving skills and dedication to quality are outstanding.</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar" style="background: rgba(245, 158, 11, 0.15); color: #f59e0b;">TM</div>
+            <div class="testimonial-author-info">
+              <h4>Tawanda Mutasa</h4>
+              <p>Project Lead, InnovateHub</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="testimonial-nav">
+      <button id="prevBtn" aria-label="Previous testimonial">◀</button>
+      <button id="nextBtn" aria-label="Next testimonial">▶</button>
+    </div>
+    <div class="testimonial-dots" id="testimonialDots"></div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section reveal">
+  <div class="cta-box">
+    <h2>Ready to Build Something <span style="background: var(--gradient-1); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">Amazing</span>?</h2>
+    <p>Let's collaborate and turn your vision into reality. Whether you need a website, a secure network, or a complete digital solution — I've got you covered.</p>
+    <div class="cta-buttons">
+      <a href="#contact" class="btn-primary">
+        Start a Project
+      </a>
+      <a href="#projects" class="btn-secondary">
+        View Portfolio
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="section-header reveal">
+    <span class="section-tag">// Get In Touch</span>
+    <h2 class="section-title">Contact <span class="highlight">Me</span></h2>
+  </div>
+  <div class="contact-grid">
+    <div class="contact-info reveal">
+      <div class="contact-card">
+        <div class="contact-card-icon">✉</div>
+        <div>
+          <h4>Email</h4>
+          <a href="mailto:delronthwingwiri@gmail.com">delronthwingwiri@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#128222;</div>
+        <div>
+          <h4>Phone</h4>
+          <a href="tel:+213562095986">+213 56 209 5986</a>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">&#128205;</div>
+        <div>
+          <h4>Location</h4>
+          <p>Algiers, Algeria</p>
+        </div>
+      </div>
+      <div class="contact-card">
+        <div class="contact-card-icon">🕐</div>
+        <div>
+          <h4>Availability</h4>
+          <p>Mon - Fri: 9AM - 6PM</p>
+        </div>
+      </div>
+    </div>
+    <form>
+    <div class="contact-form reveal">
+      <form id="contactForm">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Your Name *</label>
+            <input type="text" id="nameInput" placeholder="John Doe" required>
+          </div>
+          <div class="form-group">
+            <label>Your Email *</label>
+            <input type="email" id="emailInput" placeholder="john@example.com" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Phone Number</label>
+            <input type="tel" id="phoneInput" placeholder="+1 54 091 7382">
+          </div>
+          <div class="form-group">
+            <label>Service Needed</label>
+            <select id="serviceInput">
+              <option value="">Select a service</option>
+              <option value="web-dev">Web Development</option>
+              <option value="web-design">Web Design</option>
+              <option value="cybersecurity">Cybersecurity</option>
+              <option value="networking">Networking</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Project Details *</label>
+          <textarea id="messageInput" placeholder="Tell me about your project..." required></textarea>
+        </div>
+        <button type="submit" class="form-submit">Send Message</button>
+    </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-brand">
+      <div class="nav-logo">DELRO<span style="-webkit-text-fill-color: var(--accent);">N</span></div>
+      <p>Student, freelancer, and technology enthusiast.<br>Building the future, one project at a time. Let's create something extraordinary together.</p>
+      <div class="hero-socials" style="margin-top: 1.5rem;">
+        <a href="#" class="social-link" title="WhatsApp">⌨</a>
+        <a href="https://linkedin.com/in/delronh" class="social-link" title="LinkedIn">in</a>
+        <a href="https://x.com/DelronX" class="social-link" title="X">𝕏</a>
+        <a href="mailto:delronthwingwiri@gmail.com" class="social-link" title="Email">✉</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Services</h4>
+      <ul>
+        <li><a href="#services">Web Development</a></li>
+        <li><a href="#services">Web Design</a></li>
+        <li><a href="#services">Cybersecurity</a></li>
+        <li><a href="#services">Networking</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">Blog</a></li>
+        <li><a href="resume.pdf" target="_blank">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 Delron Hwingwiri. All rights reserved.</p>
+    <div class="footer-bottom-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+// PARTICLE BACKGROUND
+const canvas = document.getElementById('bg-canvas');
+const ctx = canvas.getContext('2d');
+let particlesArr = [];
+let animationId;
+
+function resizeCanvas() {
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+}
+resizeCanvas();
+window.addEventListener('resize', resizeCanvas);
+
+class Particle {
+  constructor() {
+    this.x = Math.random() * canvas.width;
+    this.y = Math.random() * canvas.height;
+    this.size = Math.random() * 2 + 0.5;
+    this.speedX = (Math.random() - 0.5) * 0.5;
+    this.speedY = (Math.random() - 0.5) * 0.5;
+    this.opacity = Math.random() * 0.5 + 0.1;
+  }
+  update() {
+    this.x += this.speedX;
+    this.y += this.speedY;
+    if (this.x > canvas.width) this.x = 0;
+    if (this.x < 0) this.x = canvas.width;
+    if (this.y > canvas.height) this.y = 0;
+    if (this.y < 0) this.y = canvas.height;
+  }
+  draw() {
+    ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+    ctx.fill();
+  }
+}
+
+function initParticles() {
+  particlesArr = [];
+  const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
+  for (let i = 0; i < count; i++) {
+    particlesArr.push(new Particle());
+  }
+}
+initParticles();
+
+function connectParticles() {
+  for (let a = 0; a < particlesArr.length; a++) {
+    for (let b = a + 1; b < particlesArr.length; b++) {
+      const dx = particlesArr[a].x - particlesArr[b].x;
+      const dy = particlesArr[a].y - particlesArr[b].y;
+      const distance = Math.sqrt(dx * dx + dy * dy);
+      if (distance < 150) {
+        const opacity = (1 - distance / 150) * 0.15;
+        ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
+        ctx.lineWidth = 0.5;
+        ctx.beginPath();
+        ctx.moveTo(particlesArr[a].x, particlesArr[a].y);
+        ctx.lineTo(particlesArr[b].x, particlesArr[b].y);
+        ctx.stroke();
+      }
+    }
+  }
+}
+
+function animateParticles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  particlesArr.forEach(p => { p.update(); p.draw(); });
+  connectParticles();
+  animationId = requestAnimationFrame(animateParticles);
+}
+animateParticles();
+
+// TYPING EFFECT
+const typedTexts = [
+  'Freelance Technologist',
+  'Web Developer & Designer',
+  'Cybersecurity Specialist',
+  'Electrical Engineer',
+];
+let textIndex = 0;
+let charIndex = 0;
+let isDeleting = false;
+const typedElement = document.getElementById('typed-text');
+
+function typeEffect() {
+  const currentText = typedTexts[textIndex];
+  if (isDeleting) {
+    typedElement.textContent = currentText.substring(0, charIndex - 1);
+    charIndex--;
+  } else {
+    typedElement.textContent = currentText.substring(0, charIndex + 1);
+    charIndex++;
+  }
+
+  let speed = isDeleting ? 40 : 80;
+
+  if (!isDeleting && charIndex === currentText.length) {
+    speed = 2000;
+    isDeleting = true;
+  } else if (isDeleting && charIndex === 0) {
+    isDeleting = false;
+    textIndex = (textIndex + 1) % typedTexts.length;
+    speed = 500;
+  }
+
+  setTimeout(typeEffect, speed);
+}
+typeEffect();
+
+// NAV SCROLL
+const navbar = document.getElementById('navbar');
+window.addEventListener('scroll', () => {
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+
+// HAMBURGER
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.getElementById('navLinks');
+const navOverlay = document.getElementById('navOverlay');
+
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  navLinks.classList.toggle('active');
+  navOverlay.classList.toggle('active');
+});
+
+navOverlay.addEventListener('click', () => {
+  hamburger.classList.remove('active');
+  navLinks.classList.remove('active');
+  navOverlay.classList.remove('active');
+});
+
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => {
+    hamburger.classList.remove('active');
+    navLinks.classList.remove('active');
+    navOverlay.classList.remove('active');
+  });
+});
+
+// SCROLL REVEAL
+const revealElements = document.querySelectorAll('.reveal');
+const revealObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+revealElements.forEach(el => revealObserver.observe(el));
+
+// COUNTER ANIMATION
+const statNumbers = document.querySelectorAll('.stat-number');
+const counterObserver = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const target = parseInt(entry.target.getAttribute('data-target'));
+      let current = 0;
+      const increment = target / 40;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= target) {
+          entry.target.textContent = target + '+';
+          clearInterval(timer);
+        } else {
+          entry.target.textContent = Math.ceil(current) + '+';
+        }
+      }, 50);
+      counterObserver.unobserve(entry.target);
+    }
+  });
+}, { threshold: 0.5 });
+
+statNumbers.forEach(el => counterObserver.observe(el));
+
+// TESTIMONIALS SLIDER
+const track = document.getElementById('testimonialsTrack');
+const dotsContainer = document.getElementById('testimonialDots');
+const cards = track.querySelectorAll('.testimonial-card');
+let currentSlide = 0;
+
+cards.forEach((_, i) => {
+  const dot = document.createElement('div');
+  dot.classList.add('testimonial-dot');
+  if (i === 0) dot.classList.add('active');
+  dot.addEventListener('click', () => goToSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+function goToSlide(index) {
+  currentSlide = index;
+  track.style.transform = `translateX(-${index * 100}%)`;
+  document.querySelectorAll('.testimonial-dot').forEach((d, i) => {
+    d.classList.toggle('active', i === index);
+  });
+}
+
+document.getElementById('prevBtn').addEventListener('click', () => {
+  goToSlide(currentSlide === 0 ? cards.length - 1 : currentSlide - 1);
+});
+
+document.getElementById('nextBtn').addEventListener('click', () => {
+  goToSlide(currentSlide === cards.length - 1 ? 0 : currentSlide + 1);
+});
+
+// Auto-slide
+let autoSlide = setInterval(() => {
+  goToSlide(currentSlide === cards.length - 1 ? 0 : currentSlide + 1);
+}, 5000);
+
+document.querySelector('.testimonials-container').addEventListener('mouseenter', () => clearInterval(autoSlide));
+document.querySelector('.testimonials-container').addEventListener('mouseleave', () => {
+  autoSlide = setInterval(() => {
+    goToSlide(currentSlide === cards.length - 1 ? 0 : currentSlide + 1);
+  }, 5000);
+});
+
+// CONTACT FORM
+const contactForm = document.getElementById('contactForm');
+const formStatus = document.getElementById('formStatus');
+
+contactForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const name = document.getElementById('nameInput').value.trim();
+  const email = document.getElementById('emailInput').value.trim();
+  const message = document.getElementById('messageInput').value.trim();
+
+  if (!name || !email || !message) {
+    formStatus.textContent = '️ Please fill in all required fields.';
+    formStatus.className = 'form-status error';
+    return;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    formStatus.textContent = '⚠️ Please enter a valid email address.';
+    formStatus.className = 'form-status error';
+    return;
+  }
+
+  const submitBtn = contactForm.querySelector('.form-submit');
+  submitBtn.textContent = '⏳ Sending...';
+  submitBtn.disabled = true;
+
+  setTimeout(() => {
+    formStatus.textContent = '✅ Message sent successfully! I\'ll get back to you soon.';
+    formStatus.className = 'form-status success';
+    submitBtn.textContent = '🚀 Send Message';
+    submitBtn.disabled = false;
+    contactForm.reset();
+    setTimeout(() => { formStatus.textContent = ''; }, 5000);
+  }, 1500);
+});
+
+// SMOOTH SCROLL FOR ANCHOR LINKS
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function(e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute('href'));
+    if (target) {
+      const offset = navbar.offsetHeight + 10;
+      const top = target.getBoundingClientRect().top + window.pageYOffset - offset;
+      window.scrollTo({ top, behavior: 'smooth' });
+    }
+  });
+});
+
+// ACTIVE NAV LINK HIGHLIGHT
+const sections = document.querySelectorAll('section[id]');
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100;
+    if (window.pageYOffset >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+  navLinks.querySelectorAll('a').forEach(link => {
+    link.style.color = link.getAttribute('href') === `#${current}` ? 'var(--accent)' : '';
+  });
+});
+</script>
+</body>
+</html>
+
