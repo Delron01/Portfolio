@@ -1,3 +1,10 @@
+.card-title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
 *, *::before, *::after {
   margin: 0;
   padding: 0;
