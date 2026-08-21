@@ -664,7 +664,7 @@ section {
   position: relative;
 }
 
-.project-preview-bg.p1 { background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460); }
+.project-preview-bg.p1 { background-image: url("e-comm_bg.avif"); background-size: cover; background-position: center; background-repeat: no-repeat; }
 .project-preview-bg.p2 { background: linear-gradient(135deg, #0d1117, #161b22, #1a2332); }
 .project-preview-bg.p3 { background: linear-gradient(135deg, #1a0a2e, #2d1b69, #1a1a2e); }
 .project-preview-bg.p4 { background: linear-gradient(135deg, #0a1a0a, #1a2e1a, #0f3420); }
