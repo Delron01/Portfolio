@@ -665,11 +665,11 @@ section {
 }
 
 .project-preview-bg.p1 { background-image: url("e-comm_bg.avif"); background-size: cover; background-position: center; background-repeat: no-repeat; }
-.project-preview-bg.p2 { background: linear-gradient(135deg, #0d1117, #161b22, #1a2332); }
-.project-preview-bg.p3 { background: linear-gradient(135deg, #1a0a2e, #2d1b69, #1a1a2e); }
-.project-preview-bg.p4 { background: linear-gradient(135deg, #0a1a0a, #1a2e1a, #0f3420); }
-.project-preview-bg.p5 { background: linear-gradient(135deg, #2e1a0a, #34200f, #1a1a0a); }
-.project-preview-bg.p6 { background: linear-gradient(135deg, #0a1a2e, #0f2034, #1a0a2e); }
+.project-preview-bg.p2 { background-image: url("redesign.png"); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.project-preview-bg.p3 { background-image: url("secure-vault.jpg"); background-size: cover; background-position: center; background-repeat: no-repeat;}
+.project-preview-bg.p4 { background-image: url("net-monitor.png"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.project-preview-bg.p5 { background-image: url("kefir.JPG"); background-size: cover; background-position: center; background-repeat: no-repeat; }
+.project-preview-bg.p6 { background-image: url("it-support.PNG"); background-size: cover; background-position: center; background-repeat: no-repeat; }
 
 .project-overlay {
   position: absolute;
