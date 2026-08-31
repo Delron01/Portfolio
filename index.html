@@ -26,7 +26,7 @@
     <li><a href="#services">Services</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#testimonials">Testimonials</a></li>
-    <li><a href="#contact" class="nav-cta">Hire Me</a></li>
+    <li><a href="#contact" class="nav-cta">Contact Me</a></li>
   </ul>
   <div class="hamburger" id="hamburger">
     <span></span>
@@ -48,10 +48,10 @@
       <p class="hero-desc">A passionate engineering student and freelance developer specializing in building exceptional web experiences, secure networks, and innovative digital solutions.</p>
       <div class="hero-buttons">
         <a href="#contact" class="btn-primary">
-          Let's Work Together
+          Contact Me
         </a>
         <a href="#projects" class="btn-secondary">
-          View My Work
+          View Projects
         </a>
       </div>
       <div class="hero-socials">
@@ -595,80 +595,6 @@
 </footer>
 
 <script>
-// PARTICLE BACKGROUND
-const canvas = document.getElementById('bg-canvas');
-const ctx = canvas.getContext('2d');
-let particlesArr = [];
-let animationId;
-
-function resizeCanvas() {
-  canvas.width = window.innerWidth;
-  canvas.height = window.innerHeight;
-}
-resizeCanvas();
-window.addEventListener('resize', resizeCanvas);
-
-class Particle {
-  constructor() {
-    this.x = Math.random() * canvas.width;
-    this.y = Math.random() * canvas.height;
-    this.size = Math.random() * 2 + 0.5;
-    this.speedX = (Math.random() - 0.5) * 0.5;
-    this.speedY = (Math.random() - 0.5) * 0.5;
-    this.opacity = Math.random() * 0.5 + 0.1;
-  }
-  update() {
-    this.x += this.speedX;
-    this.y += this.speedY;
-    if (this.x > canvas.width) this.x = 0;
-    if (this.x < 0) this.x = canvas.width;
-    if (this.y > canvas.height) this.y = 0;
-    if (this.y < 0) this.y = canvas.height;
-  }
-  draw() {
-    ctx.fillStyle = `rgba(0, 212, 255, ${this.opacity})`;
-    ctx.beginPath();
-    ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
-    ctx.fill();
-  }
-}
-
-function initParticles() {
-  particlesArr = [];
-  const count = Math.min(80, Math.floor((canvas.width * canvas.height) / 15000));
-  for (let i = 0; i < count; i++) {
-    particlesArr.push(new Particle());
-  }
-}
-initParticles();
-
-function connectParticles() {
-  for (let a = 0; a < particlesArr.length; a++) {
-    for (let b = a + 1; b < particlesArr.length; b++) {
-      const dx = particlesArr[a].x - particlesArr[b].x;
-      const dy = particlesArr[a].y - particlesArr[b].y;
-      const distance = Math.sqrt(dx * dx + dy * dy);
-      if (distance < 150) {
-        const opacity = (1 - distance / 150) * 0.15;
-        ctx.strokeStyle = `rgba(0, 212, 255, ${opacity})`;
-        ctx.lineWidth = 0.5;
-        ctx.beginPath();
-        ctx.moveTo(particlesArr[a].x, particlesArr[a].y);
-        ctx.lineTo(particlesArr[b].x, particlesArr[b].y);
-        ctx.stroke();
-      }
-    }
-  }
-}
-
-function animateParticles() {
-  ctx.clearRect(0, 0, canvas.width, canvas.height);
-  particlesArr.forEach(p => { p.update(); p.draw(); });
-  connectParticles();
-  animationId = requestAnimationFrame(animateParticles);
-}
-animateParticles();
-
 // TYPING EFFECT
 const typedTexts = [
   'Freelance Technologist',
