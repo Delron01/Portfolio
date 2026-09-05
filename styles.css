@@ -5,7 +5,7 @@
 }
 
 :root {
-  --bg-primary: #0a0e17;
+  --bg-primary: #ffffff;
   --bg-secondary: #111827;
   --bg-card: #1a2236;
   --accent: #00d4ff;
@@ -15,7 +15,7 @@
   --text-secondary: #94a3b8;
   --text-muted: #64748b;
   --border: #1e293b;
-  --gradient-1: linear-gradient(135deg, #00d4ff, #7b2ff7);
+  --gradient-1: #00d4ff;
   --gradient-2: linear-gradient(135deg, #0a0e17, #1a2236);
   --font-mono: 'Fira Code', monospace;
   --font-heading: 'Rajdhani', sans-serif;
@@ -26,7 +26,7 @@
 html {
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: var(--accent) var(--bg-primary);
+  scrollbar-color: #e2e8f0;
 }
 
 body {
@@ -52,7 +52,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: rgba(10, 14, 23, 0.85);
+  background:#ffffff;
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   transition: all 0.3s ease;
@@ -64,14 +64,18 @@ nav.scrolled {
 }
 
 .nav-logo {
-  font-family: var(--font-accent);
-  font-size: 1.3rem;
-  font-weight: 700;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  letter-spacing: 2px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.nav-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
 .nav-links {
@@ -98,7 +102,6 @@ nav.scrolled {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--gradient-1);
   transition: width 0.3s ease;
 }
 
@@ -106,7 +109,7 @@ nav.scrolled {
 .nav-links a:hover::after { width: 100%; }
 
 .nav-cta {
-  background: var(--gradient-1) !important;
+  background: #0099CC !important;
   -webkit-background-clip: unset !important;
   -webkit-text-fill-color: unset !important;
   background-clip: unset !important;
@@ -198,7 +201,7 @@ section {
 .section-line {
   width: 60px;
   height: 3px;
-  background: var(--gradient-1);
+  background: #000000;
   margin: 1rem auto 0;
   border-radius: 2px;
 }
@@ -249,9 +252,9 @@ section {
   margin-bottom: 0.5rem;
 }
 
-.hero-name .first { color: var(--text-primary); }
+.hero-name .first { color: #181818; }
 .hero-name .last {
-  background: var(--gradient-1);
+  background: #181818;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -285,7 +288,7 @@ section {
 }
 
 .btn-primary {
-  background: var(--gradient-1);
+  background: #0099CC;
   color: var(--bg-primary);
   padding: 0.8rem 2rem;
   border: none;
@@ -375,7 +378,7 @@ section {
   position: absolute;
   inset: -4px;
   border-radius: 50%;
-  background: var(--gradient-1);
+  background: #95c8f7;
   z-index: -1;
   animation: rotate 6s linear infinite;
   opacity: 0.7;
@@ -400,8 +403,7 @@ section {
 
 .floating-badge {
   position: absolute;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
+  background: #f1eeee;
   border-radius: 12px;
   padding: 0.6rem 1rem;
   display: flex;
@@ -409,7 +411,7 @@ section {
   gap: 0.5rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--text-primary);
+  color: #000000;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   animation: float 3s ease-in-out infinite;
   white-space: nowrap;
@@ -425,12 +427,9 @@ section {
   font-size: 0.8rem;
 }
 
-.badge-1 { top: 10%; right: -20%; animation-delay: 0s; }
-.badge-1 .badge-icon { background: rgba(0, 212, 255, 0.2); color: var(--accent); }
+.badge-1 { top: 10%; right: -30%; animation-delay: 0s; }
 .badge-2 { bottom: 15%; left: -25%; animation-delay: 1s; }
-.badge-2 .badge-icon { background: rgba(123, 47, 247, 0.2); color: var(--accent-secondary); }
 .badge-3 { bottom: -5%; right: -10%; animation-delay: 2s; }
-.badge-3 .badge-icon { background: rgba(16, 185, 129, 0.2); color: #10b981; }
 
 /* ABOUT */
 .about-grid {
@@ -1111,9 +1110,12 @@ footer {
   margin-bottom: 3rem;
 }
 
-.footer-brand .nav-logo {
-  font-size: 1.2rem;
+.footer-brand .footer-logo {
+  font-family: var(--font-accent);
+  font-size: 1.3rem;
+  font-weight: 700;
   margin-bottom: 1rem;
+  color: var(--gradient-1);
   display: inline-block;
 }
 
@@ -1167,20 +1169,6 @@ footer {
   font-size: 0.8rem;
   font-family: var(--font-mono);
 }
-
-.footer-bottom-links {
-  display: flex;
-  gap: 1.5rem;
-}
-
-.footer-bottom-links a {
-  color: var(--text-muted);
-  text-decoration: none;
-  font-size: 0.8rem;
-  transition: color 0.3s;
-}
-
-.footer-bottom-links a:hover { color: var(--accent); }
 
 /* ANIMATIONS */
 @keyframes fadeInLeft {
