@@ -173,16 +173,6 @@ section {
   margin-bottom: 4rem;
 }
 
-.section-tag {
-  font-family: var(--font-mono);
-  color: var(--accent);
-  font-size: 0.85rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  display: block;
-}
-
 .section-title {
   font-family: var(--font-heading);
   font-size: clamp(2rem, 5vw, 3rem);
